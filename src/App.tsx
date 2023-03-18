@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from './assets/logo.svg';
+import pikachuImg from './assets/pikachu.jpg';
 import {
   AppContainerDiv,
   AppHeader,
-  AppLogoImg,
+  ExampleImage,
   LinkA,
   TextP,
 } from './App.styles';
@@ -12,16 +12,14 @@ const App = (): JSX.Element => {
   return (
     <AppContainerDiv>
       <AppHeader>
-        <AppLogoImg src={logo} alt="logo" />
-        <TextP>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </TextP>
+        <ExampleImage src={pikachuImg} alt="pikachu" />
+        <TextP>Pikachu</TextP>
         <LinkA
-          href="https://reactjs.org"
-          target="_blank"
+          href="https://richard-netto.github.io/"
+          target="_self"
           rel="noopener noreferrer"
         >
-          Learn React
+          Back
         </LinkA>
       </AppHeader>
     </AppContainerDiv>
