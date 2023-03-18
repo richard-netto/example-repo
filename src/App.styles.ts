@@ -1,13 +1,4 @@
-import styled, { keyframes } from 'styled-components';
-
-const logoSpinAnimation = keyframes`
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
-    `;
+import styled from 'styled-components';
 
 export const AppContainerDiv = styled.div`
   text-align: center;
@@ -24,10 +15,10 @@ export const AppHeader = styled.header`
   color: white;
 `;
 
-export const AppLogoImg = styled.img`
+export const ExampleImage = styled.img`
   height: 40vmin;
   pointer-events: none;
-  animation: ${logoSpinAnimation} infinite 10s linear;
+  user-select: none;
 `;
 
 export const TextP = styled.p``;
